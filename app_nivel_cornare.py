@@ -20,8 +20,8 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # Coordenadas por defecto (Institución Universitaria Pascual Bravo)
 # Se usan solo si la API no trae la latitud/longitud de la estación.
 # ------------------------------------------------------------------
-LAT_DEFECTO = 6.2766
-LON_DEFECTO = -75.5901
+LAT_DEFECTO = 6.1806
+LON_DEFECTO = -75.32974
 
 API_BASE_URL = "https://marco.cornare.gov.co/api/v1/estaciones"
 
@@ -30,7 +30,7 @@ LLAVE_VALOR = "level"
 CANDIDATOS_LAT = ["lat", "latitude", "latitud"]
 CANDIDATOS_LON = ["lng", "lon", "longitude", "longitud"]
 
-st.set_page_config(page_title="Nivel de estación — CORNARE", page_icon="🌊", layout="wide")
+st.set_page_config(page_title="ESTACIÓN MARINILLA, DATOS PRECIPITACIONES", page_icon="🌊", layout="wide")
 
 
 # ------------------------------------------------------------------
