@@ -16,7 +16,7 @@ import urllib3
 from io import BytesIO
 from PIL import Image
 import requests
-url = "https://x.com/mmarinilla/photo"
+
 
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -126,6 +126,7 @@ fecha_hasta = st.sidebar.date_input("Hasta", pd.to_datetime("2026-08-31")).strft
 calidad = st.sidebar.selectbox("Calidad", [1, 0], index=0, help="1 = solo datos validados")
 consultar = st.sidebar.button("🔍 Consultar", type="primary")
 
+url = "https://x.com/mmarinilla/photo" 
 response = requests.get(url)
 img = Image.open(BytesIO(response.content))
 img.show()
