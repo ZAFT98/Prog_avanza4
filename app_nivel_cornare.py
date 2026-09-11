@@ -330,12 +330,11 @@ c1, c2, c3, c4, c5 = st.columns([1.3, 2, 1.5, 1.5, 1.2])
 with c1:
     codigo_estacion = st.selectbox(
         "Estación",
-        options=["31", "208"],
+        options=["31"],
         index=0,
         format_func=lambda x: (
             "31 · Marinilla"
             if x == "31"
-            else "208 · Rionegro"
         ),
     )
 
