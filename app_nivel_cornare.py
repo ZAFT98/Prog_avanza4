@@ -80,7 +80,7 @@ st.markdown("""
         font-weight: 800;
         line-height: 1.1;
         margin: 0;
-        margin-top: 15px;
+        margin-top: 25px;
     }
 
     .subtitle {
