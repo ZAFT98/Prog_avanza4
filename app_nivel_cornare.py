@@ -40,8 +40,7 @@ ESTACIONES = {
         "nombre": "Estación Marinilla",
         "ubicacion": "Marinilla, Antioquia",
         "descripcion": "Monitoreo de nivel hídrico",
-    },
- 
+    }
 }
 
 st.set_page_config(
@@ -102,6 +101,7 @@ st.markdown("""
         color: #006b3c;
         font-size: 1.45rem;
         font-weight: 800;
+        margin-top: 15px;
     }
 
     .station-info {
@@ -330,11 +330,12 @@ c1, c2, c3, c4, c5 = st.columns([1.3, 2, 1.5, 1.5, 1.2])
 with c1:
     codigo_estacion = st.selectbox(
         "Estación",
-        options=["31"],
+        options=["31", "208"],
         index=0,
         format_func=lambda x: (
             "31 · Marinilla"
             if x == "31"
+            else "208 · Rionegro"
         ),
     )
 
