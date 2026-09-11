@@ -41,11 +41,7 @@ ESTACIONES = {
         "ubicacion": "Marinilla, Antioquia",
         "descripcion": "Monitoreo de nivel hídrico",
     },
-    "208": {
-        "nombre": "Rionegro, Villa Camila",
-        "ubicacion": "Rionegro, Antioquia",
-        "descripcion": "Estación de monitoreo ambiental",
-    },
+ 
 }
 
 st.set_page_config(
